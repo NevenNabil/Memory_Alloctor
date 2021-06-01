@@ -900,29 +900,106 @@ border:none;
                   </rect>
                  </property>
                  <layout class="QGridLayout" name="gridLayout_6">
-                  <item row="19" column="1">
-                   <widget class="Line" name="line_5">
-                    <property name="lineWidth">
-                     <number>0</number>
-                    </property>
-                    <property name="orientation">
-                     <enum>Qt::Horizontal</enum>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="0" column="0" colspan="3">
-                   <widget class="QLabel" name="label_5">
+                  <item row="1" column="0">
+                   <widget class="Line" name="line_19">
                     <property name="sizePolicy">
                      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                       <horstretch>0</horstretch>
                       <verstretch>0</verstretch>
                      </sizepolicy>
                     </property>
-                    <property name="maximumSize">
+                    <property name="minimumSize">
                      <size>
-                      <width>700</width>
-                      <height>16777215</height>
+                      <width>0</width>
+                      <height>30</height>
                      </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">border:none;</string>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Vertical</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="18" column="0">
+                   <widget class="QPushButton" name="delete_hole">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="toolTip">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Delete Selected Hole&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton::hover
+
+{
+	border-color: rgb(255, 255, 255);
+	background-color: rgb(255, 0, 0);
+}
+
+QPushButton{
+	
+	font: 75  11pt bold &quot;Perpetua Titling MT&quot;;
+
+	color: rgb(255, 255, 255);
+	background-color: rgb(170, 0, 0);
+
+
+}
+
+QPushButton:pressed
+{
+    background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #2d2d2d, stop: 0.1 #2b2b2b, stop: 0.5 #292929, stop: 0.9 #282828, stop: 1 #252525);
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>Delete Selected Hole</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="12" column="0">
+                   <widget class="Line" name="line_14">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>10</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">border:none;</string>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Vertical</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="2">
+                   <widget class="Line" name="line_3">
+                    <property name="styleSheet">
+                     <string notr="true">border:none;</string>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="8" column="0">
+                   <widget class="QLabel" name="label_28">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
                     </property>
                     <property name="font">
                      <font>
@@ -932,14 +1009,54 @@ border:none;
                      </font>
                     </property>
                     <property name="styleSheet">
-                     <string notr="true">color: rgb(255, 251, 252);
- background-color: QLinearGradient(x1:0, y1:0, x2:0, y2:1, stop:0  rgb(250, 0, 0), stop: 0.5 rgb(140, 0, 0));</string>
+                     <string notr="true"> background-color: QLinearGradient(x1:0, y1:0, x2:0, y2:1, stop:0  rgb(208, 0, 0), stop: 0.5 rgb(170, 0, 0));</string>
                     </property>
                     <property name="text">
-                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Memory Current State&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:11pt; color:#ecdbd8;&quot;&gt;Hole Information&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                     </property>
                     <property name="textFormat">
                      <enum>Qt::RichText</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="9" column="0">
+                   <widget class="QLineEdit" name="starting_adress">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>300</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <property name="toolTip">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Hole starting address&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">font: 75  9pt &quot;MS Shell Dlg 2&quot;;
+
+
+	color: rgb(0, 0, 0);</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="placeholderText">
+                     <string>Enter the hole starting address</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="20" column="1">
+                   <widget class="Line" name="line_5">
+                    <property name="lineWidth">
+                     <number>0</number>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
                     </property>
                    </widget>
                   </item>
@@ -983,28 +1100,6 @@ QPushButton:pressed
                     </property>
                    </widget>
                   </item>
-                  <item row="1" column="0">
-                   <widget class="Line" name="line_19">
-                    <property name="sizePolicy">
-                     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                      <horstretch>0</horstretch>
-                      <verstretch>0</verstretch>
-                     </sizepolicy>
-                    </property>
-                    <property name="minimumSize">
-                     <size>
-                      <width>0</width>
-                      <height>30</height>
-                     </size>
-                    </property>
-                    <property name="styleSheet">
-                     <string notr="true">border:none;</string>
-                    </property>
-                    <property name="orientation">
-                     <enum>Qt::Vertical</enum>
-                    </property>
-                   </widget>
-                  </item>
                   <item row="3" column="0">
                    <widget class="QLineEdit" name="memory_size">
                     <property name="sizePolicy">
@@ -1041,70 +1136,40 @@ border-color: rgb(112, 0, 0);
                     </property>
                    </widget>
                   </item>
-                  <item row="2" column="2">
-                   <widget class="Line" name="line_3">
-                    <property name="styleSheet">
-                     <string notr="true">border:none;</string>
-                    </property>
-                    <property name="orientation">
-                     <enum>Qt::Horizontal</enum>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="7" column="0">
-                   <widget class="Line" name="line_4">
+                  <item row="0" column="0" colspan="3">
+                   <widget class="QLabel" name="label_5">
                     <property name="sizePolicy">
                      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                       <horstretch>0</horstretch>
                       <verstretch>0</verstretch>
                      </sizepolicy>
                     </property>
-                    <property name="minimumSize">
-                     <size>
-                      <width>0</width>
-                      <height>30</height>
-                     </size>
-                    </property>
-                    <property name="styleSheet">
-                     <string notr="true">border:none;</string>
-                    </property>
-                    <property name="orientation">
-                     <enum>Qt::Vertical</enum>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="10" column="0">
-                   <widget class="QLineEdit" name="hole_size">
-                    <property name="sizePolicy">
-                     <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-                      <horstretch>0</horstretch>
-                      <verstretch>0</verstretch>
-                     </sizepolicy>
-                    </property>
                     <property name="maximumSize">
                      <size>
-                      <width>300</width>
+                      <width>700</width>
                       <height>16777215</height>
                      </size>
                     </property>
-                    <property name="toolTip">
-                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Hole size&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    <property name="font">
+                     <font>
+                      <pointsize>12</pointsize>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
                     </property>
                     <property name="styleSheet">
-                     <string notr="true">font: 75  9pt &quot;MS Shell Dlg 2&quot;;
-
-
-	color: rgb(0, 0, 0);</string>
+                     <string notr="true">color: rgb(255, 251, 252);
+ background-color: QLinearGradient(x1:0, y1:0, x2:0, y2:1, stop:0  rgb(250, 0, 0), stop: 0.5 rgb(140, 0, 0));</string>
                     </property>
                     <property name="text">
-                     <string/>
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Memory Current State&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                     </property>
-                    <property name="placeholderText">
-                     <string>Enter the hole size</string>
+                    <property name="textFormat">
+                     <enum>Qt::RichText</enum>
                     </property>
                    </widget>
                   </item>
-                  <item row="15" column="0">
+                  <item row="16" column="0">
                    <widget class="QTableWidget" name="hole_table">
                     <property name="sizePolicy">
                      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
@@ -1174,6 +1239,59 @@ border:none;
                     </column>
                    </widget>
                   </item>
+                  <item row="7" column="0">
+                   <widget class="Line" name="line_4">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">border:none;</string>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Vertical</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="10" column="0">
+                   <widget class="QLineEdit" name="hole_size">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>300</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <property name="toolTip">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Hole size&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">font: 75  9pt &quot;MS Shell Dlg 2&quot;;
+
+
+	color: rgb(0, 0, 0);</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="placeholderText">
+                     <string>Enter the hole size</string>
+                    </property>
+                   </widget>
+                  </item>
                   <item row="2" column="0">
                    <widget class="QLabel" name="label_31">
                     <property name="sizePolicy">
@@ -1200,125 +1318,7 @@ border:none;
                     </property>
                    </widget>
                   </item>
-                  <item row="12" column="0">
-                   <widget class="Line" name="line_14">
-                    <property name="sizePolicy">
-                     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                      <horstretch>0</horstretch>
-                      <verstretch>0</verstretch>
-                     </sizepolicy>
-                    </property>
-                    <property name="minimumSize">
-                     <size>
-                      <width>0</width>
-                      <height>10</height>
-                     </size>
-                    </property>
-                    <property name="styleSheet">
-                     <string notr="true">border:none;</string>
-                    </property>
-                    <property name="orientation">
-                     <enum>Qt::Vertical</enum>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="9" column="0">
-                   <widget class="QLineEdit" name="starting_adress">
-                    <property name="sizePolicy">
-                     <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-                      <horstretch>0</horstretch>
-                      <verstretch>0</verstretch>
-                     </sizepolicy>
-                    </property>
-                    <property name="maximumSize">
-                     <size>
-                      <width>300</width>
-                      <height>16777215</height>
-                     </size>
-                    </property>
-                    <property name="toolTip">
-                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Hole starting address&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                    </property>
-                    <property name="styleSheet">
-                     <string notr="true">font: 75  9pt &quot;MS Shell Dlg 2&quot;;
-
-
-	color: rgb(0, 0, 0);</string>
-                    </property>
-                    <property name="text">
-                     <string/>
-                    </property>
-                    <property name="placeholderText">
-                     <string>Enter the hole starting address</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="8" column="0">
-                   <widget class="QLabel" name="label_28">
-                    <property name="sizePolicy">
-                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                      <horstretch>0</horstretch>
-                      <verstretch>0</verstretch>
-                     </sizepolicy>
-                    </property>
-                    <property name="font">
-                     <font>
-                      <pointsize>12</pointsize>
-                      <weight>75</weight>
-                      <bold>true</bold>
-                     </font>
-                    </property>
-                    <property name="styleSheet">
-                     <string notr="true"> background-color: QLinearGradient(x1:0, y1:0, x2:0, y2:1, stop:0  rgb(208, 0, 0), stop: 0.5 rgb(170, 0, 0));</string>
-                    </property>
-                    <property name="text">
-                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:11pt; color:#ecdbd8;&quot;&gt;Hole Information&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                    </property>
-                    <property name="textFormat">
-                     <enum>Qt::RichText</enum>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="17" column="0">
-                   <widget class="QPushButton" name="delete_hole">
-                    <property name="sizePolicy">
-                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                      <horstretch>0</horstretch>
-                      <verstretch>0</verstretch>
-                     </sizepolicy>
-                    </property>
-                    <property name="toolTip">
-                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Delete Selected Hole&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                    </property>
-                    <property name="styleSheet">
-                     <string notr="true">QPushButton::hover
-
-{
-	border-color: rgb(255, 255, 255);
-	background-color: rgb(255, 0, 0);
-}
-
-QPushButton{
-	
-	font: 75  11pt bold &quot;Perpetua Titling MT&quot;;
-
-	color: rgb(255, 255, 255);
-	background-color: rgb(170, 0, 0);
-
-
-}
-
-QPushButton:pressed
-{
-    background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #2d2d2d, stop: 0.1 #2b2b2b, stop: 0.5 #292929, stop: 0.9 #282828, stop: 1 #252525);
-}</string>
-                    </property>
-                    <property name="text">
-                     <string>Delete Selected Hole</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="17" column="2">
+                  <item row="18" column="2">
                    <widget class="QPushButton" name="next_2">
                     <property name="sizePolicy">
                      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
@@ -1370,6 +1370,38 @@ QPushButton{
                     </property>
                    </widget>
                   </item>
+                  <item row="14" column="0">
+                   <widget class="QLabel" name="label_8">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>12</pointsize>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true"/>
+                    </property>
+                    <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt; color:#910000;&quot;&gt;Please fill in the hole starting adress and size.  &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                    <property name="textFormat">
+                     <enum>Qt::RichText</enum>
+                    </property>
+                   </widget>
+                  </item>
                  </layout>
                 </widget>
                </widget>
@@ -1401,43 +1433,200 @@ border:none;
                   </rect>
                  </property>
                  <layout class="QGridLayout" name="gridLayout_11">
-                  <item row="8" column="0">
-                   <widget class="QLineEdit" name="process_name">
+                  <item row="2" column="0">
+                   <widget class="QLabel" name="label">
                     <property name="sizePolicy">
-                     <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
                       <horstretch>0</horstretch>
                       <verstretch>0</verstretch>
                      </sizepolicy>
                     </property>
                     <property name="maximumSize">
                      <size>
-                      <width>300</width>
+                      <width>380</width>
                       <height>16777215</height>
                      </size>
                     </property>
-                    <property name="toolTip">
-                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Total process name&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    <property name="font">
+                     <font>
+                      <pointsize>12</pointsize>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
                     </property>
                     <property name="styleSheet">
-                     <string notr="true">
-QLineEdit
-{
-font: 75  9pt &quot;MS Shell Dlg 2&quot;;
-
-border-color: rgb(112, 0, 0);
-	color: rgb(0, 0, 0);
-
-}</string>
+                     <string notr="true">color: rgb(255, 251, 252);
+ background-color: QLinearGradient(x1:0, y1:0, x2:0, y2:1, stop:0  rgb(250, 0, 0), stop: 0.5 rgb(140, 0, 0));</string>
                     </property>
                     <property name="text">
-                     <string/>
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#ffffff;&quot;&gt;Choose Memory Allocation Algorithm:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                     </property>
-                    <property name="placeholderText">
-                     <string>Enter the total process name</string>
+                    <property name="textFormat">
+                     <enum>Qt::RichText</enum>
                     </property>
                    </widget>
                   </item>
-                  <item row="11" column="0">
+                  <item row="7" column="0">
+                   <widget class="QLabel" name="label_32">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>12</pointsize>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true"> background-color: QLinearGradient(x1:0, y1:0, x2:0, y2:1, stop:0  rgb(208, 0, 0), stop: 0.5 rgb(170, 0, 0));</string>
+                    </property>
+                    <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:11pt; color:#ecdbd8;&quot;&gt;Process Information:  &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                    <property name="textFormat">
+                     <enum>Qt::RichText</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="14" column="0">
+                   <widget class="QPushButton" name="add_process">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="toolTip">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Add Process&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton::hover
+
+{
+	border-color: rgb(255, 0, 0);
+
+
+}
+
+QPushButton{
+	
+	font: 75  11pt bold &quot;Perpetua Titling MT&quot;;
+	color: rgb(170, 0, 0);
+	background-color: rgb(255, 255, 255);
+
+
+}
+
+QPushButton:pressed
+{
+	color: rgb(255, 255, 255);
+    background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #2d2d2d, stop: 0.1 #2b2b2b, stop: 0.5 #292929, stop: 0.9 #282828, stop: 1 #252525);
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>Add Process</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="10" column="0">
+                   <widget class="QPushButton" name="ok">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="toolTip">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Ok&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton::hover
+
+{
+	border-color: rgb(255, 0, 0);
+
+
+}
+
+QPushButton{
+	
+	font: 75  11pt bold &quot;Perpetua Titling MT&quot;;
+	color: rgb(170, 0, 0);
+	background-color: rgb(255, 255, 255);
+
+
+}
+
+QPushButton:pressed
+{
+	color: rgb(255, 255, 255);
+    background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #2d2d2d, stop: 0.1 #2b2b2b, stop: 0.5 #292929, stop: 0.9 #282828, stop: 1 #252525);
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>Ok</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="12" column="0">
+                   <widget class="QLabel" name="label_6">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>12</pointsize>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true"/>
+                    </property>
+                    <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt; color:#910000;&quot;&gt;Please fill in the segments names and sizes.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                    <property name="textFormat">
+                     <enum>Qt::RichText</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="6" column="0">
+                   <widget class="Line" name="line_17">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>10</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">border:none;</string>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Vertical</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="13" column="0">
                    <widget class="QTableWidget" name="segments_table">
                     <property name="sizePolicy">
                      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
@@ -1510,130 +1699,6 @@ border:none;
                     </column>
                    </widget>
                   </item>
-                  <item row="2" column="0">
-                   <widget class="QLabel" name="label">
-                    <property name="sizePolicy">
-                     <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                      <horstretch>0</horstretch>
-                      <verstretch>0</verstretch>
-                     </sizepolicy>
-                    </property>
-                    <property name="maximumSize">
-                     <size>
-                      <width>380</width>
-                      <height>16777215</height>
-                     </size>
-                    </property>
-                    <property name="font">
-                     <font>
-                      <pointsize>12</pointsize>
-                      <weight>75</weight>
-                      <bold>true</bold>
-                     </font>
-                    </property>
-                    <property name="styleSheet">
-                     <string notr="true">color: rgb(255, 251, 252);
- background-color: QLinearGradient(x1:0, y1:0, x2:0, y2:1, stop:0  rgb(250, 0, 0), stop: 0.5 rgb(140, 0, 0));</string>
-                    </property>
-                    <property name="text">
-                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#ffffff;&quot;&gt;Choose Memory Allocation Algorithm:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                    </property>
-                    <property name="textFormat">
-                     <enum>Qt::RichText</enum>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="4" column="0">
-                   <widget class="QRadioButton" name="best_fit">
-                    <property name="sizePolicy">
-                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                      <horstretch>0</horstretch>
-                      <verstretch>0</verstretch>
-                     </sizepolicy>
-                    </property>
-                    <property name="toolTip">
-                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Best Fit&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                    </property>
-                    <property name="styleSheet">
-                     <string notr="true">color: rgb(131, 0, 0);
-	font: 75  11pt bold &quot;Perpetua Titling MT&quot;;
-
-</string>
-                    </property>
-                    <property name="text">
-                     <string>Best Fit</string>
-                    </property>
-                    <property name="checked">
-                     <bool>false</bool>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="7" column="0">
-                   <widget class="QLabel" name="label_32">
-                    <property name="sizePolicy">
-                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                      <horstretch>0</horstretch>
-                      <verstretch>0</verstretch>
-                     </sizepolicy>
-                    </property>
-                    <property name="font">
-                     <font>
-                      <pointsize>12</pointsize>
-                      <weight>75</weight>
-                      <bold>true</bold>
-                     </font>
-                    </property>
-                    <property name="styleSheet">
-                     <string notr="true"> background-color: QLinearGradient(x1:0, y1:0, x2:0, y2:1, stop:0  rgb(208, 0, 0), stop: 0.5 rgb(170, 0, 0));</string>
-                    </property>
-                    <property name="text">
-                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:11pt; color:#ecdbd8;&quot;&gt;Process Information&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                    </property>
-                    <property name="textFormat">
-                     <enum>Qt::RichText</enum>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="12" column="0">
-                   <widget class="QPushButton" name="add_process">
-                    <property name="sizePolicy">
-                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                      <horstretch>0</horstretch>
-                      <verstretch>0</verstretch>
-                     </sizepolicy>
-                    </property>
-                    <property name="toolTip">
-                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Add Process&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                    </property>
-                    <property name="styleSheet">
-                     <string notr="true">QPushButton::hover
-
-{
-	border-color: rgb(255, 0, 0);
-
-
-}
-
-QPushButton{
-	
-	font: 75  11pt bold &quot;Perpetua Titling MT&quot;;
-	color: rgb(170, 0, 0);
-	background-color: rgb(255, 255, 255);
-
-
-}
-
-QPushButton:pressed
-{
-	color: rgb(255, 255, 255);
-    background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #2d2d2d, stop: 0.1 #2b2b2b, stop: 0.5 #292929, stop: 0.9 #282828, stop: 1 #252525);
-}</string>
-                    </property>
-                    <property name="text">
-                     <string>Add Process</string>
-                    </property>
-                   </widget>
-                  </item>
                   <item row="9" column="0">
                    <widget class="QLineEdit" name="no_of_segments">
                     <property name="sizePolicy">
@@ -1670,6 +1735,193 @@ border-color: rgb(112, 0, 0);
                     </property>
                    </widget>
                   </item>
+                  <item row="16" column="0">
+                   <widget class="QPushButton" name="delete_process">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="toolTip">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Delete Selected Process&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton::hover
+
+{
+	border-color: rgb(255, 255, 255);
+	background-color: rgb(255, 0, 0);
+}
+
+QPushButton{
+	
+	font: 75  11pt bold &quot;Perpetua Titling MT&quot;;
+
+	color: rgb(255, 255, 255);
+	background-color: rgb(170, 0, 0);
+
+
+}
+
+QPushButton:pressed
+{
+    background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #2d2d2d, stop: 0.1 #2b2b2b, stop: 0.5 #292929, stop: 0.9 #282828, stop: 1 #252525);
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>Delete Selected Process</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="8" column="0">
+                   <widget class="QLineEdit" name="process_name">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>300</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <property name="toolTip">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Total process name&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">
+QLineEdit
+{
+font: 75  9pt &quot;MS Shell Dlg 2&quot;;
+
+border-color: rgb(112, 0, 0);
+	color: rgb(0, 0, 0);
+
+}</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="placeholderText">
+                     <string>Enter the total process name</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="16" column="1">
+                   <widget class="QPushButton" name="next_3">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="toolTip">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Back&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton::hover
+{
+	border-color: rgb(255, 0, 0);
+	background-color: rgb(255, 0, 0);
+}
+QPushButton::pressed
+
+{		border-color: rgb(0, 0, 0);
+	background-color: rgb(0, 0, 0);
+}
+
+QPushButton{
+	
+	font: 75  16pt bold &quot;Perpetua Titling MT&quot;;
+    border: 6px solid #555;
+    border-radius: 27px;
+	color: rgb(255, 255, 255);
+	background-color: rgb(138, 0, 0);
+		border-color: rgb(138, 0, 0);
+
+
+    padding:1px;
+}
+</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="memory_allocator.qrc">
+                      <normaloff>:/newPrefix/circled-left.png</normaloff>:/newPrefix/circled-left.png</iconset>
+                    </property>
+                    <property name="iconSize">
+                     <size>
+                      <width>40</width>
+                      <height>40</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="1">
+                   <widget class="Line" name="line_6">
+                    <property name="lineWidth">
+                     <number>0</number>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="0" colspan="2">
+                   <widget class="QRadioButton" name="first_fit">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="toolTip">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt; color:#585858;&quot;&gt;First Fit&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(131, 0, 0);
+	font: 75  11pt bold &quot;Perpetua Titling MT&quot;;
+
+</string>
+                    </property>
+                    <property name="text">
+                     <string>First Fit</string>
+                    </property>
+                    <property name="checked">
+                     <bool>false</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="0">
+                   <widget class="QRadioButton" name="best_fit">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="toolTip">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt; color:#585858;&quot;&gt;Best Fit&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(131, 0, 0);
+	font: 75  11pt bold &quot;Perpetua Titling MT&quot;;
+
+</string>
+                    </property>
+                    <property name="text">
+                     <string>Best Fit</string>
+                    </property>
+                    <property name="checked">
+                     <bool>false</bool>
+                    </property>
+                   </widget>
+                  </item>
                   <item row="5" column="0">
                    <widget class="QRadioButton" name="worst_fit">
                     <property name="sizePolicy">
@@ -1679,7 +1931,7 @@ border-color: rgb(112, 0, 0);
                      </sizepolicy>
                     </property>
                     <property name="toolTip">
-                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Worst Fit&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt; color:#585858;&quot;&gt;Worst Fit&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                     </property>
                     <property name="styleSheet">
                      <string notr="true">color: rgb(131, 0, 0);
@@ -1695,7 +1947,29 @@ border-color: rgb(112, 0, 0);
                     </property>
                    </widget>
                   </item>
-                  <item row="13" column="0">
+                  <item row="11" column="0">
+                   <widget class="Line" name="line_20">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>10</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">border:none;</string>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Vertical</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="15" column="0">
                    <widget class="QTableWidget" name="process_table">
                     <property name="sizePolicy">
                      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
@@ -1768,194 +2042,6 @@ border:none;
                       <string>Segments Info.</string>
                      </property>
                     </column>
-                   </widget>
-                  </item>
-                  <item row="2" column="1">
-                   <widget class="Line" name="line_6">
-                    <property name="lineWidth">
-                     <number>0</number>
-                    </property>
-                    <property name="orientation">
-                     <enum>Qt::Horizontal</enum>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="3" column="0">
-                   <widget class="QRadioButton" name="first_fit">
-                    <property name="sizePolicy">
-                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                      <horstretch>0</horstretch>
-                      <verstretch>0</verstretch>
-                     </sizepolicy>
-                    </property>
-                    <property name="toolTip">
-                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;First Fit&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                    </property>
-                    <property name="styleSheet">
-                     <string notr="true">color: rgb(131, 0, 0);
-	font: 75  11pt bold &quot;Perpetua Titling MT&quot;;
-
-</string>
-                    </property>
-                    <property name="text">
-                     <string>First Fit</string>
-                    </property>
-                    <property name="checked">
-                     <bool>false</bool>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="14" column="0">
-                   <widget class="QPushButton" name="delete_process">
-                    <property name="sizePolicy">
-                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                      <horstretch>0</horstretch>
-                      <verstretch>0</verstretch>
-                     </sizepolicy>
-                    </property>
-                    <property name="toolTip">
-                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Delete Selected Process&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                    </property>
-                    <property name="styleSheet">
-                     <string notr="true">QPushButton::hover
-
-{
-	border-color: rgb(255, 255, 255);
-	background-color: rgb(255, 0, 0);
-}
-
-QPushButton{
-	
-	font: 75  11pt bold &quot;Perpetua Titling MT&quot;;
-
-	color: rgb(255, 255, 255);
-	background-color: rgb(170, 0, 0);
-
-
-}
-
-QPushButton:pressed
-{
-    background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #2d2d2d, stop: 0.1 #2b2b2b, stop: 0.5 #292929, stop: 0.9 #282828, stop: 1 #252525);
-}</string>
-                    </property>
-                    <property name="text">
-                     <string>Delete Selected Process</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="10" column="0">
-                   <widget class="QPushButton" name="ok">
-                    <property name="sizePolicy">
-                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                      <horstretch>0</horstretch>
-                      <verstretch>0</verstretch>
-                     </sizepolicy>
-                    </property>
-                    <property name="toolTip">
-                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Ok&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                    </property>
-                    <property name="styleSheet">
-                     <string notr="true">QPushButton::hover
-
-{
-	border-color: rgb(255, 0, 0);
-
-
-}
-
-QPushButton{
-	
-	font: 75  11pt bold &quot;Perpetua Titling MT&quot;;
-	color: rgb(170, 0, 0);
-	background-color: rgb(255, 255, 255);
-
-
-}
-
-QPushButton:pressed
-{
-	color: rgb(255, 255, 255);
-    background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #2d2d2d, stop: 0.1 #2b2b2b, stop: 0.5 #292929, stop: 0.9 #282828, stop: 1 #252525);
-}</string>
-                    </property>
-                    <property name="text">
-                     <string>Ok</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="6" column="0">
-                   <widget class="Line" name="line_17">
-                    <property name="sizePolicy">
-                     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                      <horstretch>0</horstretch>
-                      <verstretch>0</verstretch>
-                     </sizepolicy>
-                    </property>
-                    <property name="minimumSize">
-                     <size>
-                      <width>0</width>
-                      <height>10</height>
-                     </size>
-                    </property>
-                    <property name="styleSheet">
-                     <string notr="true">border:none;</string>
-                    </property>
-                    <property name="orientation">
-                     <enum>Qt::Vertical</enum>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="14" column="1">
-                   <widget class="QPushButton" name="next_3">
-                    <property name="sizePolicy">
-                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                      <horstretch>0</horstretch>
-                      <verstretch>0</verstretch>
-                     </sizepolicy>
-                    </property>
-                    <property name="toolTip">
-                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Back&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                    </property>
-                    <property name="styleSheet">
-                     <string notr="true">QPushButton::hover
-{
-	border-color: rgb(255, 0, 0);
-	background-color: rgb(255, 0, 0);
-}
-QPushButton::pressed
-
-{		border-color: rgb(0, 0, 0);
-	background-color: rgb(0, 0, 0);
-}
-
-QPushButton{
-	
-	font: 75  16pt bold &quot;Perpetua Titling MT&quot;;
-    border: 6px solid #555;
-    border-radius: 27px;
-	color: rgb(255, 255, 255);
-	background-color: rgb(138, 0, 0);
-		border-color: rgb(138, 0, 0);
-
-
-    padding:1px;
-}
-</string>
-                    </property>
-                    <property name="text">
-                     <string/>
-                    </property>
-                    <property name="icon">
-                     <iconset resource="memory_allocator.qrc">
-                      <normaloff>:/newPrefix/circled-left.png</normaloff>:/newPrefix/circled-left.png</iconset>
-                    </property>
-                    <property name="iconSize">
-                     <size>
-                      <width>40</width>
-                      <height>40</height>
-                     </size>
-                    </property>
                    </widget>
                   </item>
                  </layout>
